@@ -3,14 +3,14 @@ export function OfficersPage () {
     <div class="wrap">
 
         <header class="masthead">
-            <div class="masthead-mark">
-                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
-                    <circle cx="11" cy="11" r="10" stroke="#4d6b6a" stroke-width="1"/>
-                    <circle cx="11" cy="11" r="5.5" stroke="#4d6b6a" stroke-width="1" stroke-dasharray="2 2"/>
-                </svg>
+                <div class="masthead-mark">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <circle cx="11" cy="11" r="10" stroke="#4d6b6a" stroke-width="1"/>
+                        <circle cx="11" cy="11" r="5.5" stroke="#4d6b6a" stroke-width="1" stroke-dasharray="2 2"/>
+                    </svg>
 
-                <a href="index.html">Dashboard</a> |  Officers
-            </div>
+                    <a href="/home" data-link>Dashboard</a> | Officers
+                </div>
             <div class="masthead-term">Academic Year 26-27</div>
         </header>
 

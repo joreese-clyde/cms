@@ -73,7 +73,7 @@ body::before {
   font-weight: 700;
   font-size: 13px;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: var(--ink-soft);
 }
 

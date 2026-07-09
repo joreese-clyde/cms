@@ -1,20 +1,16 @@
+import { initializeEventFilter } from "./events.js";
+
 export function HomePage() {
+  setTimeout(() => {
+    initializeEventFilter();
+  }, 0);
+
   return `
     <header id="navbar">
       <div class="nav-inner">
         <a href="#" class="nav-logo">
           <div class="logo-circle">
-            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <circle cx="9" cy="9" r="3" fill="white"/>
-              <circle cx="9" cy="2" r="1.5" fill="white" opacity=".7"/>
-              <circle cx="9" cy="16" r="1.5" fill="white" opacity=".7"/>
-              <circle cx="2" cy="9" r="1.5" fill="white" opacity=".7"/>
-              <circle cx="16" cy="9" r="1.5" fill="white" opacity=".7"/>
-              <line x1="9" y1="3.5" x2="9" y2="6" stroke="white" stroke-width="1" opacity=".5"/>
-              <line x1="9" y1="12" x2="9" y2="14.5" stroke="white" stroke-width="1" opacity=".5"/>
-              <line x1="3.5" y1="9" x2="6" y2="9" stroke="white" stroke-width="1" opacity=".5"/>
-              <line x1="12" y1="9" x2="14.5" y2="9" stroke="white" stroke-width="1" opacity=".5"/>
-            </svg>
+          link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
           </div>
           <span class="logo-text">Cluster Mind Society</span>
         </a>
@@ -25,7 +21,7 @@ export function HomePage() {
           <a href="#vmg">Goals</a>
           <a href="#events">Events</a>
           <a href="/officers" data-link>Officers</a>
-          <a href="#events" class="btn-join">Join Us</a>
+          <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join">Join Us</a>
         </nav>
 
         <button class="hamburger" id="ham" aria-label="Menu">
@@ -38,11 +34,9 @@ export function HomePage() {
         <a href="#vmg" onclick="closeMobile()">Goals</a>
         <a href="#events" onclick="closeMobile()">Events</a>
         <a href="#officers" onclick="closeMobile()">Officers</a>
-        <a href="#events" class="btn-join" onclick="closeMobile()">Join Us</a>
+        <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join" onclick="closeMobile()">Join Us</a>
       </div>
     </header>
-
-    <!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
     <section id="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -73,8 +67,6 @@ export function HomePage() {
         </div>
       </div>
     </section>
-
-    <!-- ═══════════════════════════ VISION / MISSION / GOALS ═════════════════ -->
     <section id="vmg">
       <div class="section-inner">
         <div class="section-header">
@@ -88,7 +80,6 @@ export function HomePage() {
         </div>
 
         <div class="vmg-grid">
-          <!-- Vision -->
           <div class="vmg-card">
             <div class="vmg-icon">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -107,8 +98,6 @@ export function HomePage() {
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
           </div>
-
-          <!-- Mission (featured) -->
           <div class="vmg-card featured">
             <div class="vmg-icon">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -127,8 +116,6 @@ export function HomePage() {
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
           </div>
-
-          <!-- Goals -->
           <div class="vmg-card">
             <div class="vmg-icon">
               <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -149,8 +136,6 @@ export function HomePage() {
         </div>
       </div>
     </section>
-
-    <!-- ═══════════════════════════════ EVENTS ═══════════════════════════════ -->
     <section id="events">
       <div class="section-inner">
         <div class="events-header">
@@ -158,6 +143,7 @@ export function HomePage() {
             <p class="section-eyebrow">What We Do</p>
             <h2 class="section-title">Events we&apos;re<br><em>part of.</em></h2>
           </div>
+
           <div class="filter-bar" id="filter-bar">
             <button class="filter-btn active" data-filter="All">All</button>
             <button class="filter-btn" data-filter="Conference">Conference</button>
@@ -166,96 +152,70 @@ export function HomePage() {
           </div>
         </div>
 
-        <!-- Featured -->
-        <div class="featured-event" id="featured-event">
+        <!-- FEATURED EVENT -->
+        <div class="featured-event">
           <div>
             <div class="badges">
               <span class="badge badge-solid">Featured</span>
               <span class="badge badge-outline">Conference</span>
             </div>
+
             <h3 class="featured-title">CAMPUS DEVCON 2025</h3>
-            <p class="featured-desc">We are grateful for this opportunity. This event has been instrumental in shaping our work, allowing us to connect with so many people, discover new perspectives, and learn valuable lessons..</p>
+
+            <p class="featured-desc">
+              We are grateful for this opportunity.
+              This event has been instrumental in shaping
+              our work, allowing us to connect with many
+              people and discover new perspectives.
+            </p>
+
             <div class="meta-row">
               <span class="meta-item">📅 October 28, 2025</span>
-              <span class="meta-item">📍 Misamis State University - Iligan Institute of Technology</span>
+              <span class="meta-item">📍 MSU-IIT</span>
             </div>
           </div>
         </div>
 
-        <!-- Event grid -->
+        <!-- DYNAMIC EVENTS -->
         <div class="event-grid" id="event-grid"></div>
       </div>
     </section>
-
-    <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
     <footer>
       <div class="footer-inner">
         <div class="footer-grid">
           <div>
             <div class="footer-brand-logo">
               <div class="logo-circle">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <circle cx="9" cy="9" r="3" fill="white"/>
-                  <circle cx="9" cy="2" r="1.5" fill="white" opacity=".7"/>
-                  <circle cx="9" cy="16" r="1.5" fill="white" opacity=".7"/>
-                  <circle cx="2" cy="9" r="1.5" fill="white" opacity=".7"/>
-                  <circle cx="16" cy="9" r="1.5" fill="white" opacity=".7"/>
-                  <line x1="9" y1="3.5" x2="9" y2="6" stroke="white" stroke-width="1" opacity=".5"/>
-                  <line x1="9" y1="12" x2="9" y2="14.5" stroke="white" stroke-width="1" opacity=".5"/>
-                  <line x1="3.5" y1="9" x2="6" y2="9" stroke="white" stroke-width="1" opacity=".5"/>
-                  <line x1="12" y1="9" x2="14.5" y2="9" stroke="white" stroke-width="1" opacity=".5"/>
-                </svg>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
               </div>
               <span class="logo-text">Cluster Mind Society</span>
             </div>
             <p class="footer-brand-desc">A community of forward-thinking individuals building connections, knowledge, and impact across disciplines and borders.</p>
             <div class="socials">
-              <a href="#" class="social-btn" aria-label="LinkedIn">Li</a>
-              <a href="#" class="social-btn" aria-label="Twitter">Tw</a>
-              <a href="#" class="social-btn" aria-label="Instagram">Ig</a>
-              <a href="#" class="social-btn" aria-label="YouTube">Yt</a>
+              <a href="https://www.facebook.com/clustermindsociety" class="social-btn" aria-label="Facebook">FB</a>
             </div>
           </div>
           <div>
             <p class="footer-col-title">Organization</p>
             <ul class="footer-links">
-              <li><a href="#">Vision</a></li>
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">Goals</a></li>
-              <li><a href="#">Leadership</a></li>
-              <li><a href="#">Press</a></li>
+              <li><a href="#vmg">Vision</a></li>
+              <li><a href="#mission">Mission</a></li>
+              <li><a href="#goals">Goals</a></li>
             </ul>
           </div>
           <div>
             <p class="footer-col-title">Community</p>
             <ul class="footer-links">
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Membership</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Mentorship</a></li>
-              <li><a href="#">Forum</a></li>
+              <li><a href="#events">Events</a></li>
+              <li><a href="https://forms.gle/4AHmdi6G95mVqG6J6">Membership</a></li>
             </ul>
           </div>
           <div>
             <p class="footer-col-title">Connect</p>
-            <ul class="footer-links">
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Partner With Us</a></li>
-              <li><a href="#">Newsletter</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">FAQs</a></li>
-            </ul>
+            <P class="footer-col-desc">Have questions or want to get involved? Reach out to us!</p>
+            <a href="mailto:clustermindsociety@gmail.com" class="btn-outline">Email Us</a>
           </div>
         </div>
-
-        <div class="newsletter-strip">
-          <div>
-            <p class="newsletter-title">Stay in the loop.</p>
-            <p class="newsletter-sub">Get event updates, insights, and community news every two weeks.</p>
-          </div>
-          <div class="newsletter-form">
-            <input class="newsletter-input" type="email" placeholder="your@email.com" />
-            <button class="btn-subscribe">Subscribe</button>
           </div>
         </div>
 

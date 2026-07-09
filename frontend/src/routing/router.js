@@ -1,14 +1,15 @@
 import { AboutPage } from "../page/landing/about.js";
 import { HomePage } from "../page/landing/home.js";
 import { OfficersPage } from "../page/landing/officers.js";
-
+import { initializeEventFilter } from "../page/landing/events.js";
 
 const routes = {
   '/': HomePage,
   '/home': HomePage,
   "/index.html": HomePage,
   '/about': AboutPage,
-  '/officers': OfficersPage
+  '/officers': OfficersPage,
+  '/events': initializeEventFilter
 }
 
 

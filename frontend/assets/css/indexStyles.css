@@ -247,7 +247,7 @@ em {
   align-items: center;
   gap: 8px;
   border: 1px solid var(--line-strong);
-  color: var(--ink);
+  color: var(--ink-soft);
   padding: 15px 26px;
   border-radius: var(--radius-sm);
   font-weight: 600;
