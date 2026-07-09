@@ -1,0 +1,98 @@
+export function OfficersPage () {
+  return `
+    <div class="wrap">
+
+        <header class="masthead">
+            <div class="masthead-mark">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+                    <circle cx="11" cy="11" r="10" stroke="#4d6b6a" stroke-width="1"/>
+                    <circle cx="11" cy="11" r="5.5" stroke="#4d6b6a" stroke-width="1" stroke-dasharray="2 2"/>
+                </svg>
+
+                <a href="index.html">Dashboard</a> |  Officers
+            </div>
+            <div class="masthead-term">Academic Year 26-27</div>
+        </header>
+
+      <section class="hero">
+        <h1>The Society<br><em> Officers</em></h1>
+        <p>Seven seats, one mandate: to steer, record, safeguard, and speak for the people who put them there.</p>
+      </section>
+
+      <main class="chart">
+
+        <!-- Tier I — Mayor -->
+        <div class="tier">
+          <article class="card card--principal">
+            <div class="seal"><span>JD</span></div>
+            <h2 class="name">Juan Dela Cruz</h2>
+            <p class="position">Mayor</p>
+            <p class="blurb">Leads the council, sets the agenda, and represents the body in all official matters.</p>
+          </article>
+        </div>
+
+        <div class="spine"></div>
+
+        <!-- Tier II — Vice Mayor -->
+        <div class="tier">
+          <article class="card card--second">
+            <div class="seal"><span>MR</span></div>
+            <h2 class="name">Maria Santos</h2>
+            <p class="position">Vice Mayor</p>
+            <p class="blurb">Presides over sessions, breaks ties, and assumes the chair in the Mayor's absence.</p>
+          </article>
+        </div>
+
+        <div class="spine"></div>
+
+        <!-- Tier III — Secretary / Treasurer / Auditor / PIO / Media Manager -->
+        <div class="tier--five-wrap">
+          <div class="tier--five">
+
+            <article class="card card--staff">
+              <div class="seal"><span>AB</span></div>
+              <h3 class="name">Ana Bautista</h3>
+              <p class="position">Secretary</p>
+              <p class="blurb">Keeps the minutes, records, and official correspondence of the council.</p>
+            </article>
+
+            <article class="card card--staff">
+              <div class="seal"><span>RC</span></div>
+              <h3 class="name">Ramon Cruz</h3>
+              <p class="position">Treasurer</p>
+              <p class="blurb">Manages funds, disbursements, and prepares the council's financial reports.</p>
+            </article>
+
+            <article class="card card--staff">
+              <div class="seal"><span>LT</span></div>
+              <h3 class="name">Liza Tan</h3>
+              <p class="position">Auditor</p>
+              <p class="blurb">Reviews accounts and verifies that every peso is where the ledger says it is.</p>
+            </article>
+
+            <article class="card card--staff">
+              <div class="seal"><span>KV</span></div>
+              <h3 class="name">Karla Villar</h3>
+              <p class="position">PIO</p>
+              <p class="blurb">Handles public information, announcements, and press-facing communication.</p>
+            </article>
+
+            <article class="card card--staff">
+              <div class="seal"><span>DP</span></div>
+              <h3 class="name">Diego Pineda</h3>
+              <p class="position">Media Manager</p>
+              <p class="blurb">Runs the socials, visuals, and documentation of council activities.</p>
+            </article>
+
+          </div>
+        </div>
+
+      </main>
+
+      <footer class="site-footer">
+        <p><strong>Cluster Mind Society</strong> All rights reserved 2026.</p>
+      </footer>
+
+    </div>
+  `;
+}
