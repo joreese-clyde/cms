@@ -12,7 +12,7 @@ const events = [
     title: "Canva Design Workshop",
     type: "Workshop",
     date: "November 15, 2025",
-    location: "Saint Michael's College - Computer Lab",
+    location: "St. Michael's College - Computer Lab",
     description:
       "A hands-on workshop about canva for public school teachers."
   },
@@ -21,7 +21,7 @@ const events = [
     title: "AI Research Symposium",
     type: "Symposium",
     date: "December 10, 2025",
-    location: "Saint Michael's College - Auditorium",
+    location: "St. Michael's College - Auditorium",
     description:
       "Exploring innovations in Artificial Intelligence."
   },
@@ -39,7 +39,7 @@ const events = [
     title: "CCS Days",
     type: "Workshop",
     date: "February 5, 2026",
-    location: "Saint Michael's College",
+    location: "St. Michael's College",
     description:
       "Mind over games."
   }

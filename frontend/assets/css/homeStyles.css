@@ -1,10 +1,4 @@
 @import url("components/colors.css");
-
-/* ============================================================
-   CLUSTER MIND SOCIETY — base tokens
-   Signature motif: the node/cluster dot from the logo repeats
-   as a quiet structural device (dividers, corner dots, bullets)
-   ============================================================ */
 :root {
   --ink: #142e2d;
   --ink-soft: #4d6b6a;
@@ -273,10 +267,14 @@ em {
   color: var(--ink-soft);
   margin-top: 4px;
 }
-
 /* ============================================================
-   VISION / MISSION / GOALS
+   VISION / MISSION / GOALS (VMG) SECTION
    ============================================================ */
+
+#vmg {
+  background: var(--paper);
+}
+
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -326,18 +324,32 @@ em {
   gap: 20px;
   transition: transform .25s ease, box-shadow .25s ease;
 }
-.vmg-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.vmg-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
 
+/* Featured card (Mission) */
 .vmg-card.featured {
   background: var(--c950);
   border-color: var(--c950);
   color: var(--white);
 }
-.vmg-card.featured .vmg-tag { color: var(--c50); }
-.vmg-card.featured .vmg-title { color: var(--white); }
-.vmg-card.featured .vmg-body { color: rgba(255,255,255,.72); }
-.vmg-card.featured .vmg-icon { background: rgba(255,255,255,.08); }
-.vmg-card.featured .vmg-more { color: var(--c50); }
+.vmg-card.featured .vmg-tag {
+  color: var(--c50);
+}
+.vmg-card.featured .vmg-title {
+  color: var(--white);
+}
+.vmg-card.featured .vmg-body {
+  color: rgba(255, 255, 255, 0.72);
+}
+.vmg-card.featured .vmg-icon {
+  background: rgba(255, 255, 255, 0.08);
+}
+.vmg-card.featured .vmg-more {
+  color: var(--c50);
+}
 
 .vmg-icon {
   width: 52px;
@@ -372,6 +384,14 @@ em {
   margin: 0;
 }
 
+/* Keep line breaks in the body text nice */
+.vmg-body p {
+  margin: 0 0 12px;
+}
+.vmg-body p:last-child {
+  margin-bottom: 0;
+}
+
 .vmg-more {
   display: inline-flex;
   align-items: center;
@@ -382,8 +402,29 @@ em {
   margin-top: auto;
   transition: gap .2s ease;
 }
-.vmg-card:hover .vmg-more { gap: 10px; }
+.vmg-card:hover .vmg-more {
+  gap: 10px;
+}
 
+/* ============================================================
+   RESPONSIVE (VMG SPECIFIC)
+   ============================================================ */
+
+@media (max-width: 960px) {
+  .vmg-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .vmg-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    align-items: flex-start;
+  }
+}
 /* ============================================================
    EVENTS
    ============================================================ */
@@ -678,14 +719,14 @@ footer {
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
   padding-top: 28px;
   font-size: 0.82rem;
+  text-align: center;
 }
-
 .footer-legal { display: flex; gap: 20px; }
 .footer-legal a:hover { color: var(--white); }
 
