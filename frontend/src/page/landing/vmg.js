@@ -1,4 +1,13 @@
 export function VMGPage() {
+  setTimeout(() => {
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, 0);
+
   return `
     <div class="wrap">
 
@@ -28,7 +37,7 @@ export function VMGPage() {
 
       <main class="vmg">
 
-        <article class="vmg-card">
+        <article class="vmg-card" id="vision">
           <span class="vmg-label">Vision</span>
 
           <h2>A Community of Purpose</h2>
@@ -40,7 +49,7 @@ export function VMGPage() {
           </p>
         </article>
 
-        <article class="vmg-card">
+        <article class="vmg-card" id="mission">
           <span class="vmg-label">Mission</span>
 
           <h2>Our Commitment</h2>
@@ -53,7 +62,7 @@ export function VMGPage() {
           </p>
         </article>
 
-        <article class="vmg-card">
+        <article class="vmg-card" id="goals">
           <span class="vmg-label">Goals</span>
 
           <h2>What We Aim To Achieve</h2>
@@ -75,4 +84,4 @@ export function VMGPage() {
 
     </div>
   `;
-}
+} 

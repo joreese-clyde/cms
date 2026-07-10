@@ -1,5 +1,4 @@
 import { initializeEventFilter } from "./events.js";
-
 export function HomePage() {
   setTimeout(() => {
     initializeEventFilter();
@@ -10,11 +9,10 @@ export function HomePage() {
       <div class="nav-inner">
         <a href="#" class="nav-logo">
           <div class="logo-circle">
-          link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+          <img src="/assets/images/logo/cms.png" alt="Cluster Mind Society Logo" class="logo-img" />
           </div>
           <span class="logo-text">Cluster Mind Society</span>
         </a>
-
         <nav class="nav-links">
           <a href="#vmg">Vision</a>
           <a href="#vmg">Mission</a>
@@ -33,7 +31,7 @@ export function HomePage() {
         <a href="#vmg" onclick="closeMobile()">Mission</a>
         <a href="#vmg" onclick="closeMobile()">Goals</a>
         <a href="#events" onclick="closeMobile()">Events</a>
-        <a href="#officers" onclick="closeMobile()">Officers</a>
+        <a href="/officers" data-link onclick="closeMobile()">Officers</a>
         <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join" onclick="closeMobile()">Join Us</a>
       </div>
     </header>
@@ -56,7 +54,7 @@ export function HomePage() {
           <div class="hero-btns">
             <a href="#vmg" class="btn-primary">Discover Our Mission</a>
             <a href="#events" class="btn-outline">View Events</a>
-            <a href="officers.html" class="btn-outline">Meet Our Officers</a>
+            <a href="/officers" data-link class="btn-outline">Meet Our Officers</a>
           </div>
         </div>
         <div class="hero-stats">
@@ -99,7 +97,7 @@ export function HomePage() {
              A community of student leaders united in faith, excellence, and service.
             </p>
           </div>
-          <a href="/vmg" data-link>
+          <a href="/vmg#vision" data-link>
             Learn more
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path
@@ -129,7 +127,7 @@ export function HomePage() {
               To form Ignacian-inspired students through collaboration, leadership, and meaningful service.
             </p>
           </div>
-          <a href="/vmg" data-link>
+          <a href="/vmg#mission" data-link>
               Learn more
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path
@@ -158,7 +156,7 @@ export function HomePage() {
               To strengthen faith, develop excellence, promote service, build collaboration, and form responsible leaders.
             </p>
           </div>
-          <a href="/vmg" data-link>
+          <a href="/vmg#goals" data-link>
             Learn more
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path
@@ -224,7 +222,7 @@ export function HomePage() {
           <div>
             <div class="footer-brand-logo">
               <div class="logo-circle">
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+                <img src="/assets/images/logo/cms.png" alt="Cluster Mind Society Logo" class="logo-img" />
               </div>
               <span class="logo-text">Cluster Mind Society</span>
             </div>
@@ -246,17 +244,17 @@ export function HomePage() {
             <ul class="footer-links">
               <li><a href="#events">Events</a></li>
               <li><a href="https://forms.gle/4AHmdi6G95mVqG6J6">Membership</a></li>
-              <a href="https://smciligan.edu.ph/" target="_blank" rel="noopener noreferrer">
-              St. Michael's College of Iligan, Inc.
-            </a>
+              <li>
+                <a href="https://smciligan.edu.ph/" target="_blank" rel="noopener noreferrer">
+                  St. Michael's College of Iligan, Inc.
+                </a>
+              </li>
             </ul>
           </div>
           <div>
             <p class="footer-col-title">Connect</p>
-            <P class="footer-col-desc">Have questions or want to get involved? Reach out to us!</p>
+            <p class="footer-col-desc">Have questions or want to get involved? Reach out to us!</p>
             <a href="mailto:clustermindsociety@gmail.com" class="btn-outline">Email Us</a>
-          </div>
-        </div>
           </div>
         </div>
 
@@ -264,8 +262,8 @@ export function HomePage() {
           <p class="footer-copy">
             © 2026 Cluster Mind Society. All rights reserved.
           </p>
-
-          </div>
         </div>
+      </div>
+    </footer>
   `;
 }
