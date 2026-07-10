@@ -2,6 +2,7 @@ import { AboutPage } from "../page/landing/about.js";
 import { HomePage } from "../page/landing/home.js";
 import { OfficersPage } from "../page/landing/officers.js";
 import { initializeEventFilter } from "../page/landing/events.js";
+import { VMGPage } from "../page/landing/vmg.js";
 
 const routes = {
   '/': HomePage,
@@ -9,7 +10,8 @@ const routes = {
   "/index.html": HomePage,
   '/about': AboutPage,
   '/officers': OfficersPage,
-  '/events': initializeEventFilter
+  '/events': initializeEventFilter,
+  '/vmg': VMGPage
 }
 
 
@@ -17,6 +19,7 @@ const routes = {
 export function render(path) {
 
   const app = document.getElementById('app');
-  const page = routes[path] || (() => `<h1>404</h1>`);
+  const pathname = path.split('#')[0].split('?')[0];
+  const page = routes[pathname] || (() => `<h1>404</h1>`);
   app.innerHTML = page();
 }
