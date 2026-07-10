@@ -128,11 +128,14 @@ body{
     margin-top:.7rem;
 }
 
-.site-footer{
+.simple-footer{
+    background:var(--bg);
+    margin-top:4rem;
+    padding:1.5rem 0;
     border-top:1px solid var(--line);
-    padding:2rem 0;
     text-align:center;
-    color:var(--muted);
+    color:var(--c900);
+    font-size:.85rem;
 }
 
 @media (max-width:768px){
