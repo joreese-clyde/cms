@@ -5,99 +5,136 @@ const events = [
     date: "October 28, 2025",
     location: "Misamis State University - Iligan Institute of Technology",
     description:
-      "Connecting developers, students, and technology enthusiasts."
+      "Connecting developers, students, and technology enthusiasts.",
+    images: [
+      "frontend/assets/images/events/devcon.jpg",
+      "frontend/assets/images/events/devcon2.jpg"
+    ]
   },
 
   {
     title: "Canva Design Workshop",
     type: "Workshop",
-    date: "November 15, 2025",
-    location: "St. Michael's College - Computer Lab",
+    date: "October 18, 2025",
+    location: "St. Michael's College of Iligan City, Inc. - Computer Lab",
     description:
-      "A hands-on workshop about canva for public school teachers."
-  },
-
-  {
-    title: "AI Research Symposium",
-    type: "Symposium",
-    date: "December 10, 2025",
-    location: "St. Michael's College - Auditorium",
-    description:
-      "Exploring innovations in Artificial Intelligence."
-  },
-
-  {
-    title: "NSTP-2 Workshop",
-    type: "Workshop",
-    date: "January 20, 2026",
-    location: "Cabile Village Elementarty School Brgy. Santiago",
-    description:
-      "Learning basic internet etiquette."
+      "A hands-on workshop about Canva for public school teachers.",
+    images: [
+      "frontend/assets/images/events/canva.jpg",
+      "frontend/assets/images/events/canva2.jpg"
+    ]
   },
 
   {
     title: "CCS Days",
     type: "Workshop",
-    date: "February 5, 2026",
-    location: "St. Michael's College",
+    date: "March 17, 2026",
+    location: "St. Michael's College of Iligan City, Inc. - MacLab",
     description:
-      "Mind over games."
+      "Mind over games.",
+    images: [
+      "frontend/assets/images/events/ccsdays.jpg",
+      "frontend/assets/images/events/ccsdays2.jpg"
+    ]
   }
 ];
 
 
+let slideIntervals = [];
 
 function displayEvents(filter = "All") {
+  const eventGrid = document.getElementById("event-grid");
 
-    const eventGrid = document.getElementById("event-grid");
+  if (!eventGrid) return;
 
-    if (!eventGrid) return;
-    let filteredEvents;
-    if(filter === "All"){
-        filteredEvents = events;
-    }else{
-        filteredEvents = events.filter(
-            event => event.type === filter
-        );
-    }
-    eventGrid.innerHTML = filteredEvents.map(event => {
-        return `
+  // Stop previous slideshows
+  slideIntervals.forEach(interval => clearInterval(interval));
+  slideIntervals = [];
+
+  const filteredEvents =
+    filter === "All"
+      ? events
+      : events.filter(event => event.type === filter);
+
+  eventGrid.innerHTML = filteredEvents
+    .map(
+      event => `
         <article class="event-card">
-            <div class="card-top">
-                <span class="badge badge-solid">${event.type}</span>
-                <span class="card-date">📅 ${event.date}</span>
-            </div>
-            <h3 class="card-title">${event.title}</h3>
-            <p class="card-desc">${event.description}</p>
-            <div class="card-footer">
-                <div class="card-meta-row">
-                    <span>📍 ${event.location}</span>
-                </div>
-            </div>
-        </article>
-        `;
-    }).join("");
-}
-export function initializeEventFilter(){
-    const buttons = document.querySelectorAll(
-        ".filter-btn"
-    );
-    buttons.forEach(button => {
-        button.addEventListener(
-            "click",
-            ()=>{
-                // remove active class
-                buttons.forEach(btn=>{
-                    btn.classList.remove("active");
-                });
-                // add active class
-                button.classList.add("active");
-                const category =
-                    button.dataset.filter;
 
-                displayEvents(category);
-            }
-        );
+          <img
+            src="${event.images[0]}"
+            alt="${event.title}"
+            class="event-image"
+            data-images='${JSON.stringify(event.images)}'
+          >
+
+          <div class="event-content">
+
+            <div class="card-top">
+              <span class="badge badge-solid">${event.type}</span>
+              <span class="card-date">📅 ${event.date}</span>
+            </div>
+
+            <h3 class="card-title">${event.title}</h3>
+
+            <p class="card-desc">
+              ${event.description}
+            </p>
+
+            <div class="card-footer">
+              <div class="card-meta-row">
+                <span>📍 ${event.location}</span>
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+      `
+    )
+    .join("");
+
+  initializeSlideshows();
+}
+
+function initializeSlideshows() {
+  const images = document.querySelectorAll(".event-image");
+
+  images.forEach(img => {
+    const imageList = JSON.parse(img.dataset.images);
+
+    if (imageList.length <= 1) return;
+
+    let current = 0;
+
+    const interval = setInterval(() => {
+      current = (current + 1) % imageList.length;
+
+      img.style.opacity = "0";
+
+      setTimeout(() => {
+        img.src = imageList[current];
+        img.style.opacity = "1";
+      }, 300);
+
+    }, 3000);
+
+    slideIntervals.push(interval);
+  });
+}
+
+export function initializeEventFilter() {
+  const buttons = document.querySelectorAll(".filter-btn");
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      buttons.forEach(btn => btn.classList.remove("active"));
+
+      button.classList.add("active");
+
+      displayEvents(button.dataset.filter);
     });
-    displayEvents("All");
+  });
+
+  displayEvents("All");
 }

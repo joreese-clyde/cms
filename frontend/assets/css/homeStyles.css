@@ -53,9 +53,6 @@ em {
   padding: 96px 32px;
 }
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
 #navbar {
   position: sticky;
   top: 0;
@@ -152,9 +149,6 @@ em {
 .mobile-menu a:last-child { border-bottom: none; }
 .mobile-menu .btn-join { text-align: center; margin-top: 8px; }
 
-/* ============================================================
-   HERO
-   ============================================================ */
 #hero {
   position: relative;
   overflow: hidden;
@@ -267,9 +261,6 @@ em {
   color: var(--ink-soft);
   margin-top: 4px;
 }
-/* ============================================================
-   VISION / MISSION / GOALS (VMG) SECTION
-   ============================================================ */
 
 #vmg {
   background: var(--paper);
@@ -406,9 +397,7 @@ em {
   gap: 10px;
 }
 
-/* ============================================================
-   RESPONSIVE (VMG SPECIFIC)
-   ============================================================ */
+
 
 @media (max-width: 960px) {
   .vmg-grid {
@@ -425,9 +414,7 @@ em {
     align-items: flex-start;
   }
 }
-/* ============================================================
-   EVENTS
-   ============================================================ */
+
 #events { background: var(--paper-tint); }
 
 .events-header {
@@ -462,17 +449,60 @@ em {
   color: var(--white);
 }
 
-.featured-event {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr;
-  gap: 0;
-  background: var(--c950);
-  color: var(--white);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  margin-bottom: 32px;
+/* ==========================
+   Featured Event
+========================== */
+
+.featured-event{
+    display:grid;
+    grid-template-columns:1.3fr 1fr;
+    align-items:center;
+    gap:48px;
+
+    background:var(--c950);
+    color:var(--white);
+
+    padding:48px;
+
+    border-radius:var(--radius-lg);
+    overflow:hidden;
+    margin-bottom:32px;
 }
-.featured-event > div:first-child { padding: 48px; }
+
+.featured-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.featured-pics{
+    width:100%;
+    height:340px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.featured-pic{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.30);
+
+    transition:
+        transform .35s ease,
+        opacity .5s ease;
+}
+
+.featured-pic:hover{
+    transform:scale(1.03);
+}
 
 .badges { display: flex; gap: 10px; margin-bottom: 20px; }
 .badge {
@@ -613,9 +643,6 @@ em {
 }
 .btn-card:hover { background: var(--c500); border-color: var(--c500); color: var(--white); }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 footer {
   background: var(--c950);
   color: rgba(255,255,255,.7);
@@ -632,7 +659,6 @@ footer {
   grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 40px;
   padding-bottom: 56px;
-  border-bottom: 1px solid rgba(255,255,255,.12);
 }
 
 .footer-brand-logo {
@@ -721,21 +747,54 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 12px;
   padding-top: 28px;
   font-size: 0.82rem;
   text-align: center;
+  width: 100%;
 }
 .footer-legal { display: flex; gap: 20px; }
 .footer-legal a:hover { color: var(--white); }
+.event-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    transition: .3s;
+}
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+.event-card:hover {
+    transform: translateY(-6px);
+}
+
+.event-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: opacity .5s ease;
+}
+
+.event-content {
+    padding: 20px;
+}
 @media (max-width: 960px) {
   .vmg-grid, .event-grid { grid-template-columns: 1fr 1fr; }
-  .featured-event { grid-template-columns: 1fr; }
+  .featured-event{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.featured-content{
+    order:1;
+}
+
+.featured-pics{
+    order:2;
+    height:260px;
+}
   .meter-box { border-left: none; border-top: 1px solid rgba(255,255,255,.1); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }

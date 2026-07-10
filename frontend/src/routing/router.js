@@ -1,20 +1,19 @@
 import { AboutPage } from "../page/landing/about.js";
 import { HomePage } from "../page/landing/home.js";
 import { OfficersPage } from "../page/landing/officers.js";
-import { initializeEventFilter } from "../page/landing/events.js";
 import { VMGPage } from "../page/landing/vmg.js";
 
+
 const routes = {
+
   '/': HomePage,
   '/home': HomePage,
-  "/index.html": HomePage,
+  '/index.html': HomePage,
   '/about': AboutPage,
   '/officers': OfficersPage,
-  '/events': initializeEventFilter,
   '/vmg': VMGPage
-}
 
-
+};
 
 export function render(path) {
 
