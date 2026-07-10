@@ -110,8 +110,6 @@ export function HomePage() {
             </svg>
           </a>
         </div>
-
-        <!-- Mission -->
         <div class="vmg-card featured">
           <div class="vmg-icon">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -140,8 +138,6 @@ export function HomePage() {
               </svg>
             </a>
         </div>
-
-        <!-- Goals -->
         <div class="vmg-card">
           <div class="vmg-icon">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
@@ -187,32 +183,34 @@ export function HomePage() {
             <button class="filter-btn" data-filter="Symposium">Symposium</button>
           </div>
         </div>
-
-        <!-- FEATURED EVENT -->
         <div class="featured-event">
-          <div>
-            <div class="badges">
-              <span class="badge badge-solid">Featured</span>
-              <span class="badge badge-outline">Conference</span>
+            <div class="featured-content">
+                <div class="badges">
+                    <span class="badge badge-solid">Featured</span>
+                    <span class="badge badge-outline">Conference</span>
+                </div>
+                <h3 class="featured-title">CAMPUS DEVCON 2025</h3>
+                <p class="featured-desc">
+                    We are grateful for this opportunity.
+                    This event has been instrumental in shaping
+                    our work, allowing us to connect with many
+                    people and discover new perspectives.
+                </p>
+                <div class="meta-row">
+                    <span class="meta-item">📅 October 28, 2025</span>
+                    <span class="meta-item">📍 MSU-IIT</span>
+                </div>
             </div>
-
-            <h3 class="featured-title">CAMPUS DEVCON 2025</h3>
-
-            <p class="featured-desc">
-              We are grateful for this opportunity.
-              This event has been instrumental in shaping
-              our work, allowing us to connect with many
-              people and discover new perspectives.
-            </p>
-
-            <div class="meta-row">
-              <span class="meta-item">📅 October 28, 2025</span>
-              <span class="meta-item">📍 MSU-IIT</span>
+            <div class="featured-pics">
+                <img
+                    src="frontend/assets/images/events/devcon.jpg"
+                    class="featured-pic"
+                    alt="Campus DevCon 2025"
+                >
             </div>
-          </div>
         </div>
 
-        <!-- DYNAMIC EVENTS -->
+
         <div class="event-grid" id="event-grid"></div>
       </div>
     </section>
