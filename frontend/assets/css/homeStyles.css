@@ -72,7 +72,7 @@ em {
 .nav-inner {
   max-width: var(--container);
   margin: 0 auto;
-  padding: 18px 32px;
+  padding: 10px 0 10px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,21 +84,25 @@ em {
   gap: 10px;
 }
 
-.logo-circle {
-  width: 34px;
-  height: 34px;
+/* .logo-circle {
+
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: var(--c500);
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+} */
+
+.logo-circle .logo-img {
+  width: 110px;
 }
 
 .logo-text {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.7rem;
   letter-spacing: -0.01em;
 }
 
