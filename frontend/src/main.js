@@ -8,7 +8,7 @@ function normalizePath(path) {
 
   // Treat index.html as the home page
   if (path === "/" || path.endsWith("/index.html")) {
-    return "/home";
+    return "/";
   }
 
   return path;

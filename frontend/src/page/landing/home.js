@@ -9,7 +9,7 @@ export function HomePage() {
       <div class="nav-inner">
         <a href="#" class="nav-logo">
           <div class="logo-circle">
-          <img src="/assets/images/logo/cms.png" alt="Cluster Mind Society Logo" class="logo-img" />
+          <img src="./assets/images/logo/cms3.png" alt="Cluster Mind Society Logo" class="logo-img">
           </div>
           <span class="logo-text">Cluster Mind Society</span>
         </a>
@@ -222,7 +222,7 @@ export function HomePage() {
           <div>
             <div class="footer-brand-logo">
               <div class="logo-circle">
-                <img src="/assets/images/logo/cms.png" alt="Cluster Mind Society Logo" class="logo-img" />
+                <img src="/assets/images/logo/cms3.png" alt="Cluster Mind Society Logo" class="logo-img" />
               </div>
               <span class="logo-text">Cluster Mind Society</span>
             </div>
