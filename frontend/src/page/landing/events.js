@@ -16,7 +16,7 @@ const events = [
     title: "Canva Design Workshop",
     type: "Workshop",
     date: "October 18, 2025",
-    location: "St. Michael's College of Iligan City, Inc. - Computer Lab",
+    location: "St. Michael's College of Iligan, Inc. - Computer Lab",
     description:
       "A hands-on workshop about Canva for public school teachers.",
     images: [
@@ -29,7 +29,7 @@ const events = [
     title: "CCS Days",
     type: "Workshop",
     date: "March 17, 2026",
-    location: "St. Michael's College of Iligan City, Inc. - MacLab",
+    location: "St. Michael's College of Iligan, Inc. - MacLab",
     description:
       "Mind over games.",
     images: [
