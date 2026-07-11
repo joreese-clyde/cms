@@ -8,24 +8,20 @@
     --line:#d8dfdc;
     --accent:#2d6b5d;
 }
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
 body{
     background:var(--bg);
     color:var(--ink);
     font-family:"Plus Jakarta Sans",sans-serif;
 }
-
 .wrap{
     width:min(1100px,92%);
     margin:auto;
 }
-
 .masthead{
     display:flex;
     justify-content:space-between;
@@ -34,52 +30,43 @@ body{
     border-bottom:1px solid var(--line);
     font-size:.9rem;
 }
-
 .masthead-mark{
     display:flex;
     align-items:center;
     gap:.6rem;
 }
-
 .masthead-mark a{
     text-decoration:none;
     color:var(--accent);
     font-weight:600;
 }
-
 .masthead-term{
     color:var(--muted);
 }
-
 .hero{
     text-align:center;
     padding:5rem 0 4rem;
 }
-
 .hero h1{
     font-family:"Fraunces",serif;
     font-size:clamp(2.7rem,6vw,5rem);
     line-height:1.1;
 }
-
 .hero em{
     color:var(--accent);
     font-style:italic;
 }
-
 .hero p{
     max-width:700px;
     margin:1.5rem auto 0;
     color:var(--muted);
     line-height:1.8;
 }
-
 .vmg{
     display:grid;
     gap:2rem;
     margin-bottom:5rem;
 }
-
 .vmg-card{
     background:var(--card);
     border:1px solid var(--line);
@@ -87,12 +74,10 @@ body{
     padding:2.5rem;
     transition:.3s;
 }
-
 .vmg-card:hover{
     transform:translateY(-4px);
     box-shadow:0 18px 45px rgba(0,0,0,.08);
 }
-
 .vmg-label{
     display:inline-block;
     background:#edf5f3;
@@ -105,29 +90,24 @@ body{
     letter-spacing:.08em;
     text-transform:uppercase;
 }
-
 .vmg-card h2{
     font-family:"Fraunces",serif;
     font-size:2rem;
     margin-bottom:1rem;
 }
-
 .vmg-card p{
     color:var(--muted);
     line-height:1.9;
 }
-
 .goal-list{
     margin-top:.8rem;
     padding-left:1.3rem;
     color:var(--muted);
     line-height:2;
 }
-
 .goal-list li+li{
     margin-top:.7rem;
 }
-
 .simple-footer{
     background:var(--bg);
     margin-top:4rem;
@@ -137,7 +117,6 @@ body{
     color:var(--c900);
     font-size:.85rem;
 }
-
 @media (max-width:768px){
 
     .masthead{
