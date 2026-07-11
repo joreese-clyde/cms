@@ -266,8 +266,8 @@ export function HomePage() {
             <p class="footer-col-title">Organization</p>
             <ul class="footer-links">
               <li><a href="#vmg">Vision</a></li>
-              <li><a href="#mission">Mission</a></li>
-              <li><a href="#goals">Goals</a></li>
+              <li><a href="#vmg">Mission</a></li>
+              <li><a href="#vmg">Goals</a></li>
             </ul>
           </div>
           <div>
