@@ -3,7 +3,7 @@ const events = [
     title: "CAMPUS DEVCON 2025",
     type: "Conference",
     date: "October 28, 2025",
-    location: "Misamis State University - Iligan Institute of Technology",
+    location: "Mindanao State University - Iligan Institute of Technology",
     description:
       "Connecting developers, students, and technology enthusiasts.",
     images: [
