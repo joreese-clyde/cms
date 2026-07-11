@@ -239,13 +239,12 @@ em {
   align-items: center;
   gap: 8px;
   border: 1px solid var(--line-strong);
-  color: var(--ink-soft);
   padding: 15px 26px;
   border-radius: var(--radius-sm);
   font-weight: 600;
   transition: border-color .2s ease, background .2s ease;
 }
-.btn-outline:hover { border-color: var(--c500); background: var(--white); }
+.btn-outline:hover { border-color: var(--c500); background: var(--c700); }
 
 .hero-stats {
   display: grid;
@@ -681,17 +680,20 @@ footer {
 
 .socials { display: flex; gap: 10px; }
 .social-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--white);
-  transition: background .2s ease, border-color .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.social-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or 'contain' if you don't want cropping */
 }
 .social-btn:hover { background: var(--c500); border-color: var(--c500); }
 

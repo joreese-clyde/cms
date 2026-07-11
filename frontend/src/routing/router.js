@@ -7,7 +7,7 @@ import { VMGPage } from "../page/landing/vmg.js";
 const routes = {
 
   '/': HomePage,
-  // '/home': HomePage,
+ '/home': HomePage,
   // "/index.html": HomePage,
   '/about': AboutPage,
   '/officers': OfficersPage,

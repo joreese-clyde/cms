@@ -79,93 +79,96 @@ export function HomePage() {
           Our community is a body of companions, united in stillness to discern our shared purpose and sent forth to labor together for the greater good.
         </p>
       </div>
+    <div class="vmg-grid">
+      <div class="vmg-card">
+        <div class="vmg-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="5" stroke="#66b2b2" stroke-width="1.5"/>
+            <path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke="#66b2b2" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5.5 5.5l2.8 2.8M19.7 19.7l2.8 2.8M5.5 22.5l2.8-2.8M19.7 8.3l2.8-2.8" stroke="#66b2b2" stroke-width="1.2" stroke-linecap="round" opacity=".5"/>
+          </svg>
+        </div>
 
-      <div class="vmg-grid">
-        <!-- Vision -->
-        <div class="vmg-card">
-          <div class="vmg-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <circle cx="14" cy="14" r="5" stroke="#66b2b2" stroke-width="1.5"/>
-              <path d="M14 2v4M14 22v4M2 14h4M22 14h4" stroke="#66b2b2" stroke-width="1.5" stroke-linecap="round"/>
-              <path d="M5.5 5.5l2.8 2.8M19.7 19.7l2.8 2.8M5.5 22.5l2.8-2.8M19.7 8.3l2.8-2.8" stroke="#66b2b2" stroke-width="1.2" stroke-linecap="round" opacity=".5"/>
-            </svg>
-          </div>
-          <div>
-            <p class="vmg-tag">01 — Vision</p>
-            <h3 class="vmg-title">A world united by collective intelligence.</h3>
-            <p class="vmg-body">
-             A community of student leaders united in faith, excellence, and service.
-            </p>
-          </div>
-          <a href="/vmg#vision" data-link>
-            Learn more
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path
-                d="M2 7h10M8 3l4 4-4 4"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
+        <div>
+          <h3 class="vmg-title">Vision</h3>
+          <p class="vmg-body">
+            Building a community of innovative students who embrace excellence,
+            leadership, collaboration, and Ignacian values.
+          </p>
         </div>
-        <div class="vmg-card featured">
-          <div class="vmg-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <path d="M14 4C8.477 4 4 8.477 4 14s4.477 10 10 10 10-4.477 10-10S19.523 4 14 4z" stroke="#66b2b2" stroke-width="1.5"/>
-              <path d="M14 9v5l3 3" stroke="#66b2b2" stroke-width="1.5" stroke-linecap="round"/>
-              <circle cx="14" cy="14" r="1.5" fill="#66b2b2"/>
-            </svg>
-          </div>
-          <div>
-            <p class="vmg-tag">02 — Mission</p>
-            <h3 class="vmg-title">Cultivate minds. Amplify impact.</h3>
-            <p class="vmg-body">
-              To form Ignacian-inspired students through collaboration, leadership, and meaningful service.
-            </p>
-          </div>
-          <a href="/vmg#mission" data-link>
-              Learn more
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path
-                  d="M2 7h10M8 3l4 4-4 4"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </a>
-        </div>
-        <div class="vmg-card">
-          <div class="vmg-icon">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-              <path d="M6 22L12 12l4 6 4-10 4 8" stroke="#66b2b2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="22" cy="26" r="2" fill="#66b2b2" opacity=".4"/>
-            </svg>
-          </div>
-          <div>
-            <p class="vmg-tag">03 — Goals</p>
-            <h3 class="vmg-title">Build. Connect. Lead. Repeat.</h3>
-            <p class="vmg-body">
-              To strengthen faith, develop excellence, promote service, build collaboration, and form responsible leaders.
-            </p>
-          </div>
-          <a href="/vmg#goals" data-link>
-            Learn more
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path
-                d="M2 7h10M8 3l4 4-4 4"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-        </div>
+
+        <a href="/vmg#vision" data-link>
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10M8 3l4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
+      <div class="vmg-card featured">
+        <div class="vmg-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M14 4C8.477 4 4 8.477 4 14s4.477 10 10 10 10-4.477 10-10S19.523 4 14 4z" stroke="#66b2b2" stroke-width="1.5"/>
+            <path d="M14 9v5l3 3" stroke="#66b2b2" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="14" cy="14" r="1.5" fill="#66b2b2"/>
+          </svg>
+        </div>
+
+        <div>
+          <h3 class="vmg-title">Mission</h3>
+          <p class="vmg-body">
+            Developing students' academic, technical, and leadership skills
+            through technology-driven programs and collaborative learning.
+          </p>
+        </div>
+
+        <a href="/vmg#mission" data-link>
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10M8 3l4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+      <div class="vmg-card">
+        <div class="vmg-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <path d="M6 22L12 12l4 6 4-10 4 8"
+              stroke="#66b2b2"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+            <circle cx="22" cy="26" r="2" fill="#66b2b2" opacity=".4"/>
+          </svg>
+        </div>
+          <div>
+            <h3 class="vmg-title">Goals</h3>
+          <p class="vmg-body">
+            Equipping members with the knowledge, values, and experience needed
+            to become responsible digital citizens and future technology professionals.
+          </p>
+        </div>
+
+        <a href="/vmg#goals" data-link>
+          Learn more
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10M8 3l4 4-4 4"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+
     </div>
   </section>
     <section id="events">
@@ -226,7 +229,18 @@ export function HomePage() {
             </div>
             <p class="footer-brand-desc">A community of forward-thinking individuals building connections, knowledge, and impact across disciplines and borders.</p>
             <div class="socials">
-              <a href="https://www.facebook.com/clustermindsociety" class="social-btn" aria-label="Facebook">FB</a>
+              <a href="https://www.facebook.com/clustermindsociety"
+                class="social-btn"
+                aria-label="Facebook"
+                target="_blank">
+                <img src="frontend/assets/images/logo/fb.jpg" alt="Facebook Logo" class="social-icon">
+              </a>
+              <a href="https://smciligan.edu.ph/"
+                class="social-btn"
+                aria-label="SMC"
+                target="_blank">
+                <img src="frontend/assets/images/logo/smcLogo.png" alt="SMC Logo" class="social-icon">
+              </a>
             </div>
           </div>
           <div>
@@ -242,11 +256,11 @@ export function HomePage() {
             <ul class="footer-links">
               <li><a href="#events">Events</a></li>
               <li><a href="https://forms.gle/4AHmdi6G95mVqG6J6">Membership</a></li>
-              <li>
+              <!-- <li>
                 <a href="https://smciligan.edu.ph/" target="_blank" rel="noopener noreferrer">
                   St. Michael's College of Iligan, Inc.
-                </a>
-              </li>
+                </a> 
+              </li> -->
             </ul>
           </div>
           <div>

@@ -3,88 +3,89 @@ export function VMGPage() {
     if (window.location.hash) {
       const target = document.querySelector(window.location.hash);
       if (target) {
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }
     }
   }, 0);
-
   return `
     <div class="wrap">
-
       <header class="masthead">
-          <div class="masthead-mark">
-            <a href="/home" data-link>
-              Dashboard
-            </a>
-
-            <span>/</span>
-
-            Vision, Mission & Goals
-          </div>
+        <div class="masthead-mark">
+          <a href="/home" data-link>Dashboard</a>
+          <span>/</span>
+          Vision, Mission & Goals
+        </div>
         <div class="masthead-term">
           Cluster Mind Society
         </div>
       </header>
-
       <section class="hero">
         <h1>Vision, Mission<br><em>& Goals</em></h1>
-
         <p>
-          Guided by faith, driven by excellence, and committed to service for the
-          growth of every Cluster Mind Society member.
+          Empowering future technology leaders through innovation,
+          collaboration, service, and Ignacian values.
         </p>
       </section>
-
       <main class="vmg">
-
         <article class="vmg-card" id="vision">
           <span class="vmg-label">Vision</span>
-
-          <h2>A Community of Purpose</h2>
-
+          <h2>A society with a purpose</h2>
           <p>
-            A student community at St. Michael's College of Iligan, Inc.
-            where minds are united in faith, strengthened by excellence,
-            and guided by service to form responsible leaders for society.
+            Cluster Mind Society envisions a thriving community of empowered
+            student leaders who embrace technology, innovation, and collaboration
+            to inspire excellence, uphold Ignacian values, and create meaningful
+            contributions that positively influence both the academic community
+            and society.
           </p>
         </article>
 
         <article class="vmg-card" id="mission">
           <span class="vmg-label">Mission</span>
-
-          <h2>Our Commitment</h2>
-
+          <h2>We guarantee our focus on</h2>
           <p>
-            Cluster Mind Society is an Ignacian-inspired organization of
-            college students committed to nurturing faith, developing
-            excellence, and promoting service through collaboration,
-            leadership, and meaningful student engagement.
+            Cluster Mind Society is dedicated to fostering academic growth,
+            technical competence, leadership, and ethical responsibility by
+            providing technology-driven programs, collaborative learning
+            opportunities, and community-centered initiatives that cultivate
+            creativity, innovation, and lifelong learning among students.
           </p>
         </article>
-
         <article class="vmg-card" id="goals">
           <span class="vmg-label">Goals</span>
+          <h2>Our Goals</h2>
+          <ol class="goal-list">
+            <li>Promote academic excellence in Computer Science, Information Technology, and related disciplines.</li>
 
-          <h2>What We Aim To Achieve</h2>
+            <li>Develop members' technical skills through workshops, coding sessions, and technology-driven projects.</li>
 
-          <ul class="goal-list">
-            <li>Strengthen faith through values formation and spiritual growth.</li>
-            <li>Pursue excellence in academics, leadership, and professional development.</li>
-            <li>Promote service through meaningful campus and community activities.</li>
-            <li>Build collaboration through mentorship, teamwork, and shared initiatives.</li>
-            <li>Develop responsible leaders who embody the values of St. Michael's College of Iligan, Inc.</li>
-          </ul>
+            <li>Encourage creativity, innovation, and problem-solving to address real-world challenges.</li>
+
+            <li>Strengthen leadership, teamwork, and communication through collaborative activities.</li>
+
+            <li>Provide opportunities for professional growth through seminars, certifications, and industry engagement.</li>
+
+            <li>Serve the school and community through technology-based outreach and volunteer initiatives.</li>
+
+            <li>Uphold the Ignacian values of faith, excellence, integrity, and service in every endeavor.</li>
+          </ol>
         </article>
+        <article class="vmg-card" id="objective">
+          <span class="vmg-label">Objective</span>
 
+          <h2>Our Objective</h2>
+          <p>
+            To empower students of St. Michael's College of Iligan, Inc. to become digitally literate, responsible, innovative, and competent users of technology through continuous learning, collaboration, and practical experience.
+          </p>
+        </article>
       </main>
-
-
       <footer class="simple-footer">
         <p>
           © <span id="year"></span> Cluster Mind Society. All rights reserved.
         </p>
       </footer>
-
     </div>
   `;
-} 
+}
