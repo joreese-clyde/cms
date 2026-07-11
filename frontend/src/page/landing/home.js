@@ -1,7 +1,27 @@
 import { initializeEventFilter } from "./events.js";
+
 export function HomePage() {
   setTimeout(() => {
     initializeEventFilter();
+
+    const hamburger = document.getElementById("ham");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        mobileMenu.classList.toggle("active");
+      });
+
+      const menuLinks = mobileMenu.querySelectorAll("a");
+
+      menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          mobileMenu.classList.remove("active");
+        });
+      });
+    }
   }, 0);
 
   return `
@@ -21,16 +41,15 @@ export function HomePage() {
           <a href="/officers" data-link>Officers</a>
           <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join">Join Us</a>
         </nav>
-
         <button class="hamburger" id="ham" aria-label="Menu">
           <span id="h1"></span><span id="h2"></span><span id="h3"></span>
         </button>
       </div>
       <div class="mobile-menu" id="mobile-menu">
-        <a href="#vmg" onclick="closeMobile()">Vision</a>
-        <a href="#vmg" onclick="closeMobile()">Mission</a>
-        <a href="#vmg" onclick="closeMobile()">Goals</a>
-        <a href="#events" onclick="closeMobile()">Events</a>
+        <a href="#vmg">Vision</a>
+        <a href="#vmg">Mission</a>
+        <a href="#vmg">Goals</a>
+        <a href="#events">Events</a>
         <a href="/officers" data-link onclick="closeMobile()">Officers</a>
         <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join" onclick="closeMobile()">Join Us</a>
       </div>
@@ -41,7 +60,7 @@ export function HomePage() {
         <div style="max-width:760px">
           <div class="hero-tag">
             <span class="hero-tag-dot"></span>
-            <span>Connecting Minds, Building Futures</span>
+            <span>One byte at a time</span>
           </div>
           <h1 class="hero-h1">
             Where great<br>
