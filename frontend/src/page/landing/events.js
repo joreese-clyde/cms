@@ -7,8 +7,8 @@ const events = [
     description:
       "Connecting developers, students, and technology enthusiasts.",
     images: [
-      "frontend/assets/images/events/devcon.jpg",
-      "frontend/assets/images/events/devcon2.jpg"
+      "assets/images/events/devcon.jpg",
+      "assets/images/events/devcon2.jpg"
     ]
   },
 
@@ -20,8 +20,8 @@ const events = [
     description:
       "A hands-on workshop about Canva for public school teachers.",
     images: [
-      "frontend/assets/images/events/canva.jpg",
-      "frontend/assets/images/events/canva2.jpg"
+      "assets/images/events/canva.jpg",
+      "assets/images/events/canva2.jpg"
     ]
   },
 
@@ -33,8 +33,8 @@ const events = [
     description:
       "Mind over games.",
     images: [
-      "frontend/assets/images/events/ccsdays.jpg",
-      "frontend/assets/images/events/ccsdays2.jpg"
+      "assets/images/events/ccsdays.jpg",
+      "assets/images/events/ccsdays2.jpg"
     ]
   }
 ];

@@ -29,7 +29,7 @@ export function HomePage() {
       <div class="nav-inner">
         <a href="#" class="nav-logo">
           <div class="logo-circle">
-          <img src="frontend/assets/images/logo/cms3.png" alt="Cluster Mind Society Logo" class="logo-img">
+          <img src="assets/images/logo/cms3.png" alt="Cluster Mind Society Logo" class="logo-img">
           </div>
           <span class="logo-text">Cluster Mind Society</span>
         </a>
@@ -225,7 +225,7 @@ export function HomePage() {
             </div>
             <div class="featured-pics">
                 <img
-                    src="frontend/assets/images/events/devcon.jpg"
+                    src="assets/images/events/devcon.jpg"
                     class="featured-pic"
                     alt="Campus DevCon 2025"
                 >
@@ -242,7 +242,7 @@ export function HomePage() {
           <div>
             <div class="footer-brand-logo">
               <div class="logo-circle">
-                <img src="frontend/assets/images/logo/cms3.png" alt="Cluster Mind Society Logo" class="logo-img" />
+                <img src="assets/images/logo/cms3.png" alt="Cluster Mind Society Logo" class="logo-img" />
               </div>
               <span class="logo-text">Cluster Mind Society</span>
             </div>
@@ -252,13 +252,13 @@ export function HomePage() {
                 class="social-btn"
                 aria-label="Facebook"
                 target="_blank">
-                <img src="frontend/assets/images/logo/fb.jpg" alt="Facebook Logo" class="social-icon">
+                <img src="assets/images/logo/fb.jpg" alt="Facebook Logo" class="social-icon">
               </a>
               <a href="https://smciligan.edu.ph/"
                 class="social-btn"
                 aria-label="SMC"
                 target="_blank">
-                <img src="frontend/assets/images/logo/smcLogo.png" alt="SMC Logo" class="social-icon">
+                <img src="assets/images/logo/smcLogo.png" alt="SMC Logo" class="social-icon">
               </a>
             </div>
           </div>
