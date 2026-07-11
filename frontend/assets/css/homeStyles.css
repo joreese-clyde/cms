@@ -261,7 +261,7 @@ em {
   font-weight: 600;
   transition: border-color .2s ease, background .2s ease;
 }
-.btn-outline:hover { border-color: var(--c500); background: var(--c700); }
+.btn-outline:hover { border-color: var(--c500); background: var(--c700); color: var(--white); }
 
 .hero-stats {
   display: grid;
