@@ -79,15 +79,11 @@ export function HomePage() {
           </div>
         </div>
         <div class="hero-image">
-          <img
-            src="assets/images/events/cover-photo.png"
-            alt="Cluster Mind Society Cover"
-            class="hero-cover"
-          >
+          <img src="assets/images/events/cover-photo.png"alt="Cluster Mind Society Cover" class="hero-cover">
         </div>
         <div class="hero-stats">
-          <div><div class="stat-val">200+</div><div class="stat-lbl">Members</div></div>
-          <div><div class="stat-val">48</div><div class="stat-lbl">Dean's Lister</div></div>
+          <div><div class="stat-val">300+</div><div class="stat-lbl">Members</div></div>
+          <div><div class="stat-val">60+</div><div class="stat-lbl">Dean's Lister</div></div>
           <!--<div><div class="stat-val">12</div><div class="stat-lbl"></div></div>-->
           <!--<div><div class="stat-val">5</div><div class="stat-lbl">Years of Impact</div></div>-->
         </div>
