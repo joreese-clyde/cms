@@ -80,7 +80,7 @@ export function HomePage() {
         </div>
         <div class="hero-image">
           <img
-            src="frontend/assets/images/events/cover-photo.png"
+            src="assets/images/events/cover-photo.png"
             alt="Cluster Mind Society Cover"
             class="hero-cover"
           >
