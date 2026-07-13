@@ -1,7 +1,7 @@
 export const officersData = {
 
     moderator: {
-        initials: "LC",
+        initials: "PD",
         name: "Paul A. Durango",
         position: "Moderator",
         description:
