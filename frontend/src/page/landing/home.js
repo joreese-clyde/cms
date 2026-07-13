@@ -57,7 +57,7 @@ export function HomePage() {
     <section id="hero">
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <div style="max-width:760px">
+        <div class="hero-text">
           <div class="hero-tag">
             <span class="hero-tag-dot"></span>
             <span>One byte at a time</span>
@@ -68,13 +68,22 @@ export function HomePage() {
             and thrive.
           </h1>
           <p class="hero-sub">
-            Cluster Mind Society is a growing community where knowledge, collaboration, and innovation intersect — shaping leaders and thinkers of tomorrow.
+            Cluster Mind Society is a growing community where knowledge,
+            collaboration, and innovation intersect — shaping leaders and
+            thinkers of tomorrow.
           </p>
           <div class="hero-btns">
             <a href="#vmg" class="btn-primary">Discover Our Mission</a>
             <a href="#events" class="btn-outline">View Events</a>
             <a href="/officers" data-link class="btn-outline">Meet Our Officers</a>
           </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="assets/images/events/cover-photo.png"
+            alt="Cluster Mind Society Cover"
+            class="hero-cover"
+          >
         </div>
         <div class="hero-stats">
           <div><div class="stat-val">200+</div><div class="stat-lbl">Members</div></div>

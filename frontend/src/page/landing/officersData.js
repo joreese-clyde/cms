@@ -1,8 +1,8 @@
 export const officersData = {
 
     moderator: {
-        initials: "LC",
-        name: "Leonie A. Cajes, MIT",
+        initials: "PD",
+        name: "Paul A. Durango",
         position: "Moderator",
         description:
         "Guides discussions and ensures smooth communication."
