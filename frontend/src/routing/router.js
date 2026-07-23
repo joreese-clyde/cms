@@ -2,6 +2,7 @@ import { AboutPage } from "../page/landing/about.js";
 import { HomePage } from "../page/landing/home.js";
 import { OfficersPage } from "../page/landing/officers.js";
 import { VMGPage } from "../page/landing/vmg.js";
+import {FAQPage} from "../page/landing/faq.js";
 
 
 const routes = {
@@ -11,7 +12,8 @@ const routes = {
   // "/index.html": HomePage,
   '/about': AboutPage,
   '/officers': OfficersPage,
-  '/vmg': VMGPage
+  '/vmg': VMGPage,
+  '/faq': FAQPage
 
 };
 

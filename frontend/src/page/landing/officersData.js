@@ -10,8 +10,8 @@ export const officersData = {
 
 
     mayor: {
-        initials: "M",
-        name: "Mayor",
+        initials: "JM",
+        name: "Joreese Clyde R. Manginsay",
         position: "Mayor",
         description:
         "Provides leadership and represents the organization."
@@ -19,8 +19,8 @@ export const officersData = {
 
 
     viceMayor: {
-        initials: "VM",
-        name: "ViceMayor",
+        initials: "AG",
+        name: "Adrian Gillo",
         position: "Vice Mayor",
         description:
         "Supports executive operations."
@@ -29,36 +29,36 @@ export const officersData = {
 
     officers:[
         {
-            initials:"S",
-            name:"Secretary",
+            initials:"AR",
+            name:"Alexandra Raagas",
             position:"Secretary",
             description:"Handles records and documentation."
         },
 
         {
-            initials:"T",
-            name:"Treasurer",
+            initials:"CS",
+            name:"Christine Mae Sanchez",
             position:"Treasurer",
             description:"Manages organization funds."
         },
 
         {
-            initials:"A",
-            name:"Auditor",
+            initials:"JD",
+            name:"Johnfritz Dicdican",
             position:"Auditor",
             description:"Ensures transparency."
         },
 
         {
-            initials:"PIO",
-            name:"PIO",
+            initials:"DC",
+            name:"Daniel Vance S. Candole",
             position:"PIO",
             description:"Handles communication."
         },
 
         {
-            initials:"MM",
-            name:"Media Manager",
+            initials:"JF",
+            name:"Jenelle A. Fajardo",
             position:"Media Manager",
             description:"Manages digital content."
         }
