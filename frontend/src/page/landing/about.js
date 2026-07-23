@@ -52,11 +52,11 @@ export function AboutPage() {
           <div class="dev-grid">
             <div class="dev-item">
               <span class="dev-name">Joreese Clyde R. Manginsay</span>
-              <span class="dev-role">Main Developer</span>
+              <span class="dev-role">Head Developer</span>
             </div>
             <div class="dev-item">
               <span class="dev-name">Daniel Vance S. Candole</span>
-              <span class="dev-role">Assitant Developer</span>
+              <span class="dev-role">Assistant Developer</span>
             </div>
           </div>
         </article>
