@@ -38,6 +38,7 @@ export function HomePage() {
           <a href="#vmg">Mission</a>
           <a href="#vmg">Goals</a>
           <a href="#events">Events</a>
+          <a href="/faq" data-link>FAQ</a>
           <a href="/officers" data-link>Officers</a>
           <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join">Join Us</a>
         </nav>
@@ -50,6 +51,7 @@ export function HomePage() {
         <a href="#vmg">Mission</a>
         <a href="#vmg">Goals</a>
         <a href="#events">Events</a>
+        <a href="/faq" data-link onclick="closeMobile()">FAQ</a>
         <a href="/officers" data-link onclick="closeMobile()">Officers</a>
         <a href="https://forms.gle/4AHmdi6G95mVqG6J6" class="btn-join" onclick="closeMobile()">Join Us</a>
       </div>
@@ -279,12 +281,9 @@ export function HomePage() {
             <p class="footer-col-title">Community</p>
             <ul class="footer-links">
               <li><a href="#events">Events</a></li>
+              <li><a href="/faq" data-link>FAQ</a></li>
               <li><a href="https://forms.gle/4AHmdi6G95mVqG6J6">Membership</a></li>
-              <!-- <li>
-                <a href="https://smciligan.edu.ph/" target="_blank" rel="noopener noreferrer">
-                  St. Michael's College of Iligan, Inc.
-                </a> 
-              </li> -->
+              <li><a href="/about" data-link>About the Site</a></li>
             </ul>
           </div>
           <div>

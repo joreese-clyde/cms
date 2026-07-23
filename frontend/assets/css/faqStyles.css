@@ -1,0 +1,47 @@
+
+/* ===== FAQ Section ===== */
+.faq{
+    display:grid;
+    gap:2rem;
+    margin-bottom:5rem;
+}
+.faq-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:22px;
+    padding:2.5rem;
+    transition:.3s;
+}
+.faq-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
+}
+.faq-label{
+    display:inline-block;
+    background:#edf5f3;
+    color:var(--accent);
+    padding:.4rem .9rem;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight:700;
+    margin-bottom:1rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+.faq-card h2{
+    font-family:"Fraunces",serif;
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+.faq-card p{
+    color:var(--muted);
+    line-height:1.9;
+}
+@media (max-width:768px){
+    .faq-card{
+        padding:2rem;
+    }
+    .faq-card h2{
+        font-size:1.6rem;
+    }
+}

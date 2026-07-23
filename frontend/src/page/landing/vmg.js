@@ -58,17 +58,11 @@ export function VMGPage() {
           <h2>Our Goals</h2>
           <ol class="goal-list">
             <li>Promote academic excellence in Computer Science, Information Technology, and related disciplines.</li>
-
             <li>Develop members' technical skills through workshops, coding sessions, and technology-driven projects.</li>
-
             <li>Encourage creativity, innovation, and problem-solving to address real-world challenges.</li>
-
             <li>Strengthen leadership, teamwork, and communication through collaborative activities.</li>
-
             <li>Provide opportunities for professional growth through seminars, certifications, and industry engagement.</li>
-
             <li>Serve the school and community through technology-based outreach and volunteer initiatives.</li>
-
             <li>Uphold the Ignacian values of faith, excellence, integrity, and service in every endeavor.</li>
           </ol>
         </article>
@@ -83,7 +77,7 @@ export function VMGPage() {
       </main>
       <footer class="simple-footer">
         <p>
-          © <span id="year"></span> Cluster Mind Society. All rights reserved.
+          © 2026 Cluster Mind Society. All rights reserved.
         </p>
       </footer>
     </div>

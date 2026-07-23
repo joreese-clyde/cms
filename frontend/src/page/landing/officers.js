@@ -96,7 +96,7 @@ export function OfficersPage() {
 
       <footer class="simple-footer">
         <p>
-          © <span id="year"></span> Cluster Mind Society. All rights reserved.
+          © 2026 Cluster Mind Society. All rights reserved.
         </p>
       </footer>
 
