@@ -11,7 +11,7 @@ export const officersData = {
 
     mayor: {
         initials: "JM",
-        name: "Joreese Clyde R. Manginsay",
+        name: "Joreese Clyde  Manginsay",
         position: "Mayor",
         description:
         "Provides leadership and represents the organization."
@@ -51,14 +51,14 @@ export const officersData = {
 
         {
             initials:"DC",
-            name:"Daniel Vance S. Candole",
+            name:"Daniel Vance  Candole",
             position:"PIO",
             description:"Handles communication."
         },
 
         {
             initials:"JF",
-            name:"Jenelle A. Fajardo",
+            name:"Jenelle  Fajardo",
             position:"Media Manager",
             description:"Manages digital content."
         }
